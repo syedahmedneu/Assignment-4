@@ -1,0 +1,50 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+25
+-sourcepath
+'/Users/syedahmed/Documents/projects/info_5100/Assignment4/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Assignment4 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Assignment4 1.0-SNAPSHOT API'
+com.mycompany.assignment4.facade_pattern
+com.mycompany.assignment4.state_pattern
+com.mycompany.assignment4
+com.mycompany.assignment4.factory_pattern
+com.mycompany.assignment4.singleton_pattern
+com.mycompany.assignment4.filter_pattern
+com.mycompany.assignment4.moon_rover
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/src/main/java = 1794857959111
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/tag-search-index.js = 1795283686078
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/overview-tree.html = 1795283686044
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/module-search-index.js = 1795283686076
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/index.html = 1795283686048
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/.DS_Store = 1794925897674
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/package-search-index.js = 1795283686076
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/index-all.html = 1795283686114
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/allpackages-index.html = 1795283686075
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/member-search-index.js = 1795283686078
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/overview-summary.html = 1795283686119
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/help-doc.html = 1795283686122
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/element-list = 1795283685858
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/search.html = 1795283686117
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/allclasses-index.html = 1795283686073
+/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/reports/apidocs/type-search-index.js = 1795283686077
