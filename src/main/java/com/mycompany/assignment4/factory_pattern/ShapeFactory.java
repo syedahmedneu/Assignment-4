@@ -5,11 +5,19 @@
 package com.mycompany.assignment4.factory_pattern;
 
 /**
+ * Factory that creates shapes from a type name.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class ShapeFactory {
     
+    /**
+     * Creates a shape for the given type name (case-insensitive).
+     *
+     * @param shapeType "Circle", "Rectangle" or "Square"; may be null
+     * @return the new shape, or null if the type is null or unknown
+     */
     public Shape getShape(String shapeType){
         if (shapeType!= null && shapeType.equalsIgnoreCase("Circle")){
             return new Circle();

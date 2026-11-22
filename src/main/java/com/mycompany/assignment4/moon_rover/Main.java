@@ -6,11 +6,18 @@ package com.mycompany.assignment4.moon_rover;
 
 
 /**
+ * Demo of the rover state machine: drive, drill, photograph, power off.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class Main {
     
+    /**
+     * Runs a scripted sequence of rover inputs.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args){
         RoverContext rover = new RoverContext();
 

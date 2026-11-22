@@ -5,10 +5,13 @@
 package com.mycompany.assignment4.factory_pattern;
 
 /**
+ * Factory-pattern shape that draws a square.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class Square implements Shape {
+    /** Prints that a square was drawn. */
     @Override
     public void draw() {
         System.out.println("Square Drawn");

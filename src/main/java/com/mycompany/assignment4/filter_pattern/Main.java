@@ -8,11 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Demo of the filter pattern: filters a sample list of persons.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class Main {
     
+    /**
+     * Builds sample persons and prints males, females and single males.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
     List<Person> persons = new ArrayList<Person> () ;
     persons.add(new Person("Robert", "Male","Married"));
@@ -34,6 +41,11 @@ public class Main {
     printPersons (singleMale.meetCriteria (persons));
     }
     
+    /**
+     * Prints each person on its own line.
+     *
+     * @param persons persons to print
+     */
     public static void printPersons(List<Person > persons){
     for (Person person : persons) {
         System.out.println("Person : [ Name : " + person.getName () + ", Gender : " + person.getGender () + ", Marital Status : " + person.getMaritalStatus() + " ]"); 

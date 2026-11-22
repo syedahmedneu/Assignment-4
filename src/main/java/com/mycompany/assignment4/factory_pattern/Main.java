@@ -5,10 +5,17 @@
 package com.mycompany.assignment4.factory_pattern;
 
 /**
+ * Demo of the factory pattern: requests shapes by name and draws them.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class Main {
+    /**
+     * Obtains and draws a circle, rectangle and square.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args){
         
         ShapeFactory shapeFactory = new ShapeFactory();

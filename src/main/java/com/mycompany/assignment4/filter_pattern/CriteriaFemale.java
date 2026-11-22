@@ -8,10 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Criteria selecting female persons.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class CriteriaFemale  implements Criteria {
+    /**
+     * Selects persons whose gender is female (case-insensitive).
+     *
+     * @param persons persons to filter
+     * @return the female persons
+     */
     @Override
     public List<Person> meetCriteria (List<Person> persons) { 
         List<Person> femalePersons = new ArrayList<Person>();

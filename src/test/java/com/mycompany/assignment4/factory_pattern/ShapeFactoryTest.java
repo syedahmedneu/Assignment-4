@@ -12,18 +12,23 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+ * Tests for {@link ShapeFactory}.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class ShapeFactoryTest {
 
+    /** Factory under test. */
     private ShapeFactory shapeFactory;
 
+    /** Creates a fresh factory. */
     @BeforeEach
     public void setUp() {
         shapeFactory = new ShapeFactory();
     }
 
+    /** Verifies a circle is created. */
     @Test
     public void testGetCircle() {
         Shape shape = shapeFactory.getShape("CIRCLE");
@@ -31,6 +36,7 @@ public class ShapeFactoryTest {
         assertInstanceOf(Circle.class, shape);
     }
 
+    /** Verifies a rectangle is created. */
     @Test
     public void testGetRectangle() {
         Shape shape = shapeFactory.getShape("RECTANGLE");
@@ -38,6 +44,7 @@ public class ShapeFactoryTest {
         assertInstanceOf(Rectangle.class, shape);
     }
 
+    /** Verifies a square is created. */
     @Test
     public void testGetSquare() {
         Shape shape = shapeFactory.getShape("SQUARE");
@@ -45,6 +52,7 @@ public class ShapeFactoryTest {
         assertInstanceOf(Square.class, shape);
     }
 
+    /** Verifies type names ignore case. */
     @Test
     public void testCaseInsensitivity() {
         Shape shape = shapeFactory.getShape("circle");
@@ -52,12 +60,14 @@ public class ShapeFactoryTest {
         assertInstanceOf(Circle.class, shape);
     }
 
+    /** Verifies unknown types return null. */
     @Test
     public void testInvalidShapeType() {
         Shape shape = shapeFactory.getShape("HEXAGON");
         assertNull(shape);
     }
 
+    /** Verifies null input returns null. */
     @Test
     public void testNullInput() {
         Shape shape = shapeFactory.getShape(null);

@@ -14,13 +14,17 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+ * Tests for {@link Person} and the filter criteria.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class MainTest {
 
+    /** Sample persons shared by the tests. */
     private List<Person> persons;
 
+    /** Builds the sample list. */
     @BeforeEach
     public void setUp() {
         persons = new ArrayList<>();
@@ -31,6 +35,7 @@ public class MainTest {
         persons.add(new Person("Bobby", "Male", "Single"));
     }
 
+    /** Verifies Person getters. */
     @Test
     public void testPersonGetters() {
         Person person = new Person("Robert", "Male", "Married");
@@ -39,6 +44,7 @@ public class MainTest {
         assertEquals("Married", person.getMaritalStatus());
     }
 
+    /** Verifies the male filter. */
     @Test
     public void testCriteriaMale() {
         Criteria male = new CriteriaMale();
@@ -49,6 +55,7 @@ public class MainTest {
                 result.stream().map(Person::getName).toList());
     }
 
+    /** Verifies the female filter. */
     @Test
     public void testCriteriaFemale() {
         Criteria female = new CriteriaFemale();
@@ -59,6 +66,7 @@ public class MainTest {
                 result.stream().map(Person::getName).toList());
     }
 
+    /** Verifies the single filter. */
     @Test
     public void testCriteriaSingle() {
         Criteria single = new CriteriaSingle();

@@ -4,13 +4,21 @@
  */
 package com.mycompany.assignment4.filter_pattern;
 
-/**
- *
- * @author syedahmed
- */
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * Criteria selecting single persons.
+ *
+ * @author syedahmed
+ * @version 1.0
+ */
 public class CriteriaSingle implements Criteria {
+    /**
+     * Selects persons whose marital status is single (case-insensitive).
+     *
+     * @param persons persons to filter
+     * @return the single persons
+     */
     @Override
     public List<Person> meetCriteria (List<Person> persons) { 
         List<Person> malePersons = new ArrayList<Person>();

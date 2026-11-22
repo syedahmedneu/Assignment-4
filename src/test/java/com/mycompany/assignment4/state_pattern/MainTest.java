@@ -14,31 +14,40 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+ * Tests for the state pattern classes.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class MainTest {
     
+    /** Captures console output for assertions. */
     private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    /** Original stdout, restored after each test. */
     private final PrintStream originalOut = System.out;
+    /** Context under test. */
     private Context context;
 
+    /** Redirects stdout and creates a context. */
     @BeforeEach
     public void setUp() {
         System.setOut(new PrintStream(outputStream));
         context = new Context();
     }
 
+    /** Restores stdout. */
     @AfterEach
     public void tearDown() {
         System.setOut(originalOut);
     }
 
+    /** Verifies a new context has no state. */
     @Test
     public void testInitialContextStateIsNull() {
         assertNull(context.getState());
     }
 
+    /** Verifies the transition from start to end state. */
     @Test
     public void testStateTransitionStartToEnd() {
         StartState startState = new StartState();

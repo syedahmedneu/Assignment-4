@@ -5,17 +5,31 @@
 package com.mycompany.assignment4.moon_rover;
 
 /**
+ * Rover moving backward, with accelerating or decelerating sub-states.
  *
  * @author syedahmed
+ * @version 1.0
  */
 
 class MovingBackwardState implements RoverState {
+    /** Speed phases while moving backward (no constant speed). */
     private enum SubState { ACCELERATING, DECELERATING }
+    /** Current speed phase; starts accelerating. */
     private SubState subState = SubState.ACCELERATING;
 
+    /**
+     * Gets the state name with its sub-state.
+     *
+     * @return the state name
+     */
     @Override
     public String getStateName() { return "On :: Moving Backwards (" + subState + ")"; }
 
+    /**
+     * Starts decelerating if accelerating.
+     *
+     * @param ctx the rover context whose state may change
+     */
     @Override
     public void rightPedalTapOnce(RoverContext ctx) {
         if (subState == SubState.ACCELERATING) {
@@ -24,6 +38,11 @@ class MovingBackwardState implements RoverState {
         }
     }
 
+    /**
+     * Resumes accelerating if decelerating.
+     *
+     * @param ctx the rover context whose state may change
+     */
     @Override
     public void leftPedalTapOnce(RoverContext ctx) {
         if (subState == SubState.DECELERATING) {
@@ -32,6 +51,11 @@ class MovingBackwardState implements RoverState {
         }
     }
 
+    /**
+     * Stops, moving to Not Moving.
+     *
+     * @param ctx the rover context whose state may change
+     */
     @Override
     public void reachZeroSpeed(RoverContext ctx) {
         ctx.setState(new NotMovingState());

@@ -5,11 +5,14 @@
 package com.mycompany.assignment4.factory_pattern;
 
 /**
+ * Factory-pattern shape that draws a rectangle.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public class Rectangle implements Shape{
 
+    /** Prints that a rectangle was drawn. */
     @Override
     public void draw() {
         System.out.println("Rectangle Drawn");

@@ -5,9 +5,12 @@
 package com.mycompany.assignment4.factory_pattern;
 
 /**
+ * Common interface for shapes created by {@link ShapeFactory}.
  *
  * @author syedahmed
+ * @version 1.0
  */
 public interface Shape {
+    /** Draws the shape. */
     public void draw();
 }
