@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.mycompany.assignment4.filter_pattern.MainTest" time="0.024" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.mycompany.assignment4.filter_pattern.MainTest" time="0.104" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,9 +12,10 @@
     <property name="user.country" value="CA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Applications/Apache NetBeans.app/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire/surefirebooter-20261122153419766_3.jar /Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire 2026-11-22T15-34-19_638-jvmRun1 surefire-20261122153419766_1tmp surefire_0-20261122153419766_2tmp"/>
+    <property name="sun.java.command" value="/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire/surefirebooter-20261125040944084_3.jar /Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire 2026-11-25T04-09-43_959-jvmRun1 surefire-20261125040944084_1tmp surefire_0-20261125040944084_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.mycompany.assignment4.filter_pattern.MainTest"/>
     <property name="surefire.test.class.path" value="/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/test-classes:/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/classes:/Users/syedahmed/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/syedahmed/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/syedahmed/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/syedahmed/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/syedahmed/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/syedahmed/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/syedahmed/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/syedahmed/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/syedahmed"/>
@@ -29,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire/surefirebooter-20261122153419766_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/syedahmed/Documents/projects/info_5100/Assignment4/target/surefire/surefirebooter-20261125040944084_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS"/>
@@ -60,8 +61,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testCriteriaSingle" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.005"/>
+  <testcase name="testCriteriaSingle" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.046"/>
   <testcase name="testCriteriaMale" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.003"/>
-  <testcase name="testPersonGetters" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.003"/>
+  <testcase name="testPersonGetters" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.002"/>
   <testcase name="testCriteriaFemale" classname="com.mycompany.assignment4.filter_pattern.MainTest" time="0.003"/>
 </testsuite>
